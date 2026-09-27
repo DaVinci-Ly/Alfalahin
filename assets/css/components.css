@@ -41,31 +41,14 @@
   flex-shrink: 0;
 }
 
-.brand__mark {
-  width: 2.85rem;
-  height: 2.85rem;
+.brand__logo {
+  height: 3rem;
+  width: auto;
+  max-width: 10rem;
   object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(212, 154, 36, 0.25));
-}
-
-.brand__text {
-  display: flex;
-  flex-direction: column;
-}
-
-.brand__name {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: var(--primary);
-  line-height: 1.2;
-}
-
-.brand__sub {
-  font-size: 0.725rem;
-  font-weight: 500;
-  color: var(--gold-hover);
-  line-height: 1.2;
-  margin-top: 0.15rem;
+  /* Sharpen the scanned logo */
+  image-rendering: -webkit-optimize-contrast;
+  filter: contrast(1.08) saturate(1.1);
 }
 
 /* ------------------------------------------------------------- القائمة */
@@ -390,26 +373,30 @@
   max-width: 27rem;
 }
 
-.hero__card-mark {
-  width: 5rem;
-  height: 5rem;
-  margin: 0 auto var(--sp-4) auto;
+.hero__card-logo {
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+  margin: 0 auto var(--sp-5) auto;
   object-fit: contain;
+  filter: contrast(1.08) saturate(1.15);
 }
 
-.hero__card-title {
-  text-align: center;
-  font-size: var(--step-1);
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: var(--sp-2);
-}
-
-.hero__card-sub {
-  text-align: center;
+.hero__card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--hair);
   font-size: var(--step--1);
   color: var(--ink-muted);
-  margin-bottom: var(--sp-6);
+}
+
+.hero__card-since {
+  font-weight: 700;
+  color: var(--gold-hover);
 }
 
 .hero__card-list {
@@ -512,8 +499,8 @@
 }
 
 .product-card__figure {
-  width: 4rem;
-  height: 4rem;
+  width: 5.5rem;
+  height: 5.5rem;
   border-radius: var(--radius-md);
   background: var(--gold-surface);
   border: 1px solid var(--gold-border);
@@ -522,11 +509,13 @@
   align-items: center;
   justify-content: center;
   margin-bottom: var(--sp-4);
+  overflow: hidden;
 }
 
+.product-card__figure img,
 .product-card__figure svg {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 4.2rem;
+  height: 4.2rem;
 }
 
 .product-card__tag {
@@ -828,11 +817,12 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.footer__brand-mark {
-  width: 3.25rem;
-  height: 3.25rem;
+.footer__brand-logo {
+  width: 11rem;
+  height: auto;
   object-fit: contain;
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-3);
+  filter: contrast(1.08) saturate(1.1);
 }
 
 .footer__brand-title {
@@ -937,9 +927,7 @@
     --header-h: 4.1rem;
   }
   .header__inner { padding-inline: 0.5rem; }
-  .brand__mark { width: 2.35rem; height: 2.35rem; }
-  .brand__name { font-size: 0.975rem; }
-  .brand__sub { font-size: 0.625rem; }
+  .brand__logo { height: 2.4rem; max-width: 8rem; }
   
   .products-grid { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }

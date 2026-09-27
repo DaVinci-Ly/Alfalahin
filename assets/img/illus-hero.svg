@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" role="img" aria-label="صوامع تخزين الحبوب ومطاحن أعلاف الفلاحين الحديثة">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7f2e7"/>
+      <stop offset="100%" stop-color="#ebe3d0"/>
+    </linearGradient>
+    <linearGradient id="goldSun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3ca65"/>
+      <stop offset="100%" stop-color="#d8951d"/>
+    </linearGradient>
+    <linearGradient id="siloSteel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e4e8e6"/>
+      <stop offset="30%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#d2dad6"/>
+      <stop offset="100%" stop-color="#b8c2be"/>
+    </linearGradient>
+    <linearGradient id="sackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf7f0"/>
+      <stop offset="100%" stop-color="#ede4d1"/>
+    </linearGradient>
+    <g id="wheat-ear">
+      <path d="M0 0 V-40" stroke="#8a5606" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M0 -10 C -7 -6, -9 0, 0 3 C 9 0, 7 -6, 0 -10 Z" fill="#d99824" stroke="#5e3802" stroke-width="1"/>
+      <path d="M-2 -18 C -10 -15, -11 -7, -2 -4 C 1 -7, 0 -13, -2 -18 Z" fill="#e8ad36" stroke="#5e3802" stroke-width="1"/>
+      <path d="M2 -18 C 10 -15, 11 -7, 2 -4 C -1 -7, 0 -13, 2 -18 Z" fill="#e8ad36" stroke="#5e3802" stroke-width="1"/>
+      <path d="M-2 -28 C -9 -25, -10 -18, -2 -15 C 0 -18, 0 -24, -2 -28 Z" fill="#f5c256" stroke="#5e3802" stroke-width="1"/>
+      <path d="M2 -28 C 9 -25, 10 -18, 2 -15 C 0 -18, 0 -24, 2 -28 Z" fill="#f5c256" stroke="#5e3802" stroke-width="1"/>
+      <path d="M0 -38 C -4 -34, 0 -28, 0 -28 C 0 -28, 4 -34, 0 -38 Z" fill="#fae092" stroke="#5e3802" stroke-width="1"/>
+      <path d="M0 -38 V-50" stroke="#8a5606" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- Big circular backdrop -->
+  <circle cx="300" cy="240" r="220" fill="url(#skyGrad)" stroke="#d8c6a0" stroke-width="2.5"/>
+  <circle cx="300" cy="240" r="235" fill="none" stroke="#c9962a" stroke-width="1.5" stroke-dasharray="3 9" opacity="0.5"/>
+  
+  <!-- Golden Sun -->
+  <circle cx="180" cy="150" r="55" fill="url(#goldSun)" opacity="0.85"/>
+
+  <!-- Horizon ground -->
+  <path d="M110 380 A 220 220 0 0 0 490 380 Z" fill="#dfd5be"/>
+  <path d="M80 380 H 520" stroke="#261908" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Three Grain Storage Silos -->
+  <!-- Silo 1 (Left) -->
+  <g transform="translate(210, 380)">
+    <path d="M-38 0 V-190 A 38 30 0 0 1 38 -190 V 0 Z" fill="url(#siloSteel)" stroke="#261908" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Cone roof -->
+    <path d="M-38 -190 L 0 -230 L 38 -190 Z" fill="#c4ceca" stroke="#261908" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Rings -->
+    <line x1="-38" y1="-140" x2="38" y2="-140" stroke="#261908" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-38" y1="-90" x2="38" y2="-90" stroke="#261908" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-38" y1="-40" x2="38" y2="-40" stroke="#261908" stroke-width="1.5" opacity="0.4"/>
+    <!-- Roof peak cap -->
+    <rect x="-5" y="-240" width="10" height="10" rx="2" fill="#261908"/>
+  </g>
+
+  <!-- Silo 2 (Center, tallest) -->
+  <g transform="translate(300, 380)">
+    <path d="M-48 0 V-220 A 48 36 0 0 1 48 -220 V 0 Z" fill="url(#siloSteel)" stroke="#261908" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M-48 -220 L 0 -270 L 48 -220 Z" fill="#b8c4bf" stroke="#261908" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Horizontal panel lines -->
+    <line x1="-48" y1="-170" x2="48" y2="-170" stroke="#261908" stroke-width="1.8" opacity="0.4"/>
+    <line x1="-48" y1="-115" x2="48" y2="-115" stroke="#261908" stroke-width="1.8" opacity="0.4"/>
+    <line x1="-48" y1="-60" x2="48" y2="-60" stroke="#261908" stroke-width="1.8" opacity="0.4"/>
+    <!-- Center access door -->
+    <rect x="-12" y="-35" width="24" height="35" rx="4" fill="#261908"/>
+    <!-- Top vent cap -->
+    <rect x="-6" y="-282" width="12" height="12" rx="2" fill="#261908"/>
+  </g>
+
+  <!-- Silo 3 (Right) -->
+  <g transform="translate(390, 380)">
+    <path d="M-38 0 V-180 A 38 30 0 0 1 38 -180 V 0 Z" fill="url(#siloSteel)" stroke="#261908" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M-38 -180 L 0 -220 L 38 -180 Z" fill="#c4ceca" stroke="#261908" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="-38" y1="-130" x2="38" y2="-130" stroke="#261908" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-38" y1="-80" x2="38" y2="-80" stroke="#261908" stroke-width="1.5" opacity="0.4"/>
+    <line x1="-38" y1="-30" x2="38" y2="-30" stroke="#261908" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Overhead Conveyor Tube / Pipe Connecting Silos -->
+  <path d="M210 -190 L 300 -220 L 390 -180" fill="none" stroke="#261908" stroke-width="4" stroke-linecap="round" transform="translate(0, 380)"/>
+  <line x1="210" y1="220" x2="390" y2="220" stroke="#8a5606" stroke-width="2.5" stroke-dasharray="4 4"/>
+
+  <!-- Finished Feed Sacks in Foreground -->
+  <g transform="translate(150, 380)">
+    <!-- Big feed sack -->
+    <path d="M-36 0 C -38 -45 -34 -85 -24 -115 C -20 -125 -10 -128 0 -128 C 10 -128 20 -125 24 -115 C 34 -85 38 -45 36 0 Z" 
+          fill="url(#sackGrad)" stroke="#261908" stroke-width="3.2" stroke-linejoin="round"/>
+    <!-- Stitched neck tie -->
+    <path d="M-26 -115 Q 0 -118 26 -115" fill="none" stroke="#a86d14" stroke-width="4" stroke-linecap="round"/>
+    <!-- Sack ears / ruffles -->
+    <path d="M-28 -115 C -34 -130 -15 -136 -5 -128 C 5 -136 34 -130 28 -115" fill="#e5dac3" stroke="#261908" stroke-width="2.5"/>
+    <!-- Brand label band on sack -->
+    <rect x="-28" y="-85" width="56" height="35" fill="#261908" rx="3"/>
+    <rect x="-25" y="-82" width="50" height="29" fill="#fcfaf6" rx="2" stroke="#d8951d" stroke-width="1.5"/>
+    <!-- Mini wheat on sack label -->
+    <path d="M0 -78 V-58 M-4 -70 L0 -74 L4 -70 M-5 -65 L0 -69 L5 -65" stroke="#d8951d" stroke-width="1.8" fill="none"/>
+  </g>
+
+  <!-- Second leaning sack -->
+  <g transform="translate(195, 380) rotate(14)">
+    <path d="M-28 0 C -30 -35 -26 -65 -18 -90 C -15 -98 -8 -100 0 -100 C 8 -100 15 -98 18 -90 C 26 -65 30 -35 28 0 Z" 
+          fill="url(#sackGrad)" stroke="#261908" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M-20 -90 Q 0 -92 20 -90" fill="none" stroke="#a86d14" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Scattered Feed Pellets on the Ground -->
+  <g fill="#a86d14" stroke="#261908" stroke-width="1">
+    <rect x="215" y="370" width="8" height="16" rx="4" transform="rotate(35 219 378)"/>
+    <rect x="235" y="372" width="7" height="15" rx="3.5" transform="rotate(-20 238 379)"/>
+    <rect x="115" y="371" width="8" height="16" rx="4" transform="rotate(75 119 379)"/>
+    <rect x="95" y="374" width="7" height="14" rx="3.5" transform="rotate(-45 98 381)"/>
+  </g>
+
+  <!-- Gracefully Arching Golden Wheat Stalks on Right -->
+  <use href="#wheat-ear" transform="translate(440, 380) scale(2.4) rotate(10)"/>
+  <use href="#wheat-ear" transform="translate(475, 380) scale(2.6) rotate(-8)"/>
+  <use href="#wheat-ear" transform="translate(510, 380) scale(2.1) rotate(16)"/>
+</svg>

@@ -1,12 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Rooster / Poultry Silhouette Line Art -->
-  <path d="M22 46c0-6 4-12 12-14 3-1 6-4 7-8 1-3 0-6-2-8 3 1 7 4 8 8 1 3 0 7-3 10 5 1 9 5 9 12H22z" fill="#fef8eb" stroke="#d49a24"/>
-  <path d="M41 16c1-2 3-3 5-3s3 2 2 4c2-1 4 0 4 2 0 2-2 3-3 3" stroke="#b88219"/>
-  <path d="M38 23h.01" stroke="#d49a24" stroke-width="3"/>
-  <path d="M43 25l4 2-4 2" stroke="#d49a24"/>
-  <path d="M12 46c4-12 12-18 20-18" stroke="#d49a24" stroke-dasharray="2 3"/>
-  <path d="M10 38c6 1 10 5 12 8" stroke="#d49a24"/>
-  <path d="M28 46v10M36 46v10M25 56h6M33 56h6" stroke="#0e1726"/>
-  <circle cx="48" cy="46" r="3" fill="#d49a24" stroke="none"/>
-  <circle cx="54" cy="44" r="2" fill="#d49a24" stroke="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <!-- Poultry / Chicken - Professional detailed icon -->
+  <circle cx="40" cy="40" r="38" fill="#fef8eb" stroke="#d4a020" stroke-width="1.5"/>
+  <!-- Body -->
+  <ellipse cx="38" cy="46" rx="16" ry="13" fill="#f0c840" stroke="#a07010" stroke-width="1.5"/>
+  <!-- Neck -->
+  <path d="M38 33 C 35 30, 35 25, 38 22 C 41 25, 41 30, 38 33 Z" fill="#e8b820" stroke="#a07010" stroke-width="1.2"/>
+  <!-- Head -->
+  <circle cx="38" cy="19" r="7" fill="#f0c840" stroke="#a07010" stroke-width="1.5"/>
+  <!-- Comb -->
+  <path d="M36 13 C 36 10, 38 8, 40 10 C 41 8, 43 7, 43 10 C 44 8, 46 8, 45 12" fill="#e05040" stroke="#c03030" stroke-width="1"/>
+  <!-- Wattle -->
+  <path d="M36 21 C 34 22, 33 25, 34 26 C 35 24, 36 23, 36 21 Z" fill="#e05040" stroke="none"/>
+  <!-- Eye -->
+  <circle cx="40" cy="18" r="1.8" fill="#141b24"/>
+  <circle cx="40.6" cy="17.4" r="0.5" fill="white"/>
+  <!-- Beak -->
+  <path d="M42 20 L 46 21 L 42 22 Z" fill="#e0a020" stroke="#a07010" stroke-width="0.8"/>
+  <!-- Wing -->
+  <path d="M22 46 C 18 40, 20 34, 28 34 C 24 38, 23 43, 25 47 Z" fill="#e8b820" stroke="#a07010" stroke-width="1.2"/>
+  <!-- Tail feathers -->
+  <path d="M54 44 C 60 38, 62 32, 58 28 M 54 46 C 62 42, 65 36, 62 30 M 53 48 C 60 46, 63 40, 62 34" fill="none" stroke="#c89010" stroke-width="2" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="34" y1="59" x2="30" y2="68" stroke="#c89010" stroke-width="2" stroke-linecap="round"/>
+  <line x1="42" y1="59" x2="45" y2="68" stroke="#c89010" stroke-width="2" stroke-linecap="round"/>
+  <!-- Feet -->
+  <path d="M27 68 L 30 68 L 33 65" stroke="#c89010" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M42 68 L 45 68 L 48 65" stroke="#c89010" stroke-width="1.5" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <defs>
+    <linearGradient id="badgeGold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b27812"/>
+      <stop offset="50%" stop-color="#dca026"/>
+      <stop offset="100%" stop-color="#f3c458"/>
+    </linearGradient>
+    <linearGradient id="badgeStem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8e5406"/>
+      <stop offset="100%" stop-color="#df9e24"/>
+    </linearGradient>
+    <filter id="badgeShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#2a1804" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Circular container with warm industrial styling -->
+  <circle cx="160" cy="160" r="150" fill="#ffffff" stroke="#e5d7ba" stroke-width="3" filter="url(#badgeShadow)"/>
+  <circle cx="160" cy="160" r="140" fill="#fcfaf6" stroke="#b27812" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <g transform="translate(5, 10)">
+    <!-- Sweeping Stems -->
+    <path d="M50 190 C 80 198, 120 185, 155 155 C 190 125, 215 95, 240 65" 
+          fill="none" stroke="url(#badgeStem)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M40 202 C 85 210, 130 195, 168 162 C 205 130, 235 95, 255 60" 
+          fill="none" stroke="#8e5406" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+    <path d="M80 185 C 115 160, 150 125, 180 90" 
+          fill="none" stroke="url(#badgeStem)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Ear 1 (Left, small) -->
+    <g transform="translate(142, 115) rotate(-35)" fill="url(#badgeGold)" stroke="#4a2903" stroke-width="1.2">
+      <path d="M0 0 C -6 -7, -6 -16, 0 -22 C 6 -16, 6 -7, 0 0 Z"/>
+      <path d="M-2 -7 C -9 -11, -11 -18, -5 -24 C -1 -20, 0 -13, -2 -7 Z"/>
+      <path d="M2 -7 C 9 -11, 11 -18, 5 -24 C 1 -20, 0 -13, 2 -7 Z"/>
+      <path d="M-2 -16 C -8 -20, -9 -27, -4 -32 C 0 -27, 0 -21, -2 -16 Z"/>
+      <path d="M2 -16 C 8 -20, 9 -27, 4 -32 C 0 -27, 0 -21, 2 -16 Z"/>
+      <path d="M0 -22 C -4 -29, 0 -38, 0 -41 C 0 -38, 4 -29, 0 -22 Z" fill="#fae092"/>
+    </g>
+
+    <!-- Ear 2 (Center, medium) -->
+    <g transform="translate(188, 88) rotate(-15)" fill="url(#badgeGold)" stroke="#4a2903" stroke-width="1.4">
+      <path d="M0 0 C -7 -9, -7 -20, 0 -27 C 7 -20, 7 -9, 0 0 Z"/>
+      <path d="M-3 -9 C -12 -14, -14 -23, -7 -30 C -2 -25, -1 -16, -3 -9 Z"/>
+      <path d="M3 -9 C 12 -14, 14 -23, 7 -30 C 2 -25, 1 -16, 3 -9 Z"/>
+      <path d="M-3 -21 C -11 -27, -12 -36, -6 -41 C -1 -35, 0 -27, -3 -21 Z"/>
+      <path d="M3 -21 C 11 -27, 12 -36, 6 -41 C 1 -35, 0 -27, 3 -21 Z"/>
+      <path d="M-2 -34 C -10 -39, -11 -46, -5 -52 C 0 -45, 1 -38, -2 -34 Z"/>
+      <path d="M2 -34 C 10 -39, 11 -46, 5 -52 C 0 -45, -1 -38, 2 -34 Z"/>
+      <path d="M0 -41 C -4 -50, 0 -61, 0 -64 C 0 -61, 4 -50, 0 -41 Z" fill="#fae092"/>
+    </g>
+
+    <!-- Ear 3 (Right, large) -->
+    <g transform="translate(230, 68) rotate(15)" fill="url(#badgeGold)" stroke="#4a2903" stroke-width="1.4">
+      <path d="M0 0 C -8 -11, -8 -22, 0 -30 C 8 -22, 8 -11, 0 0 Z"/>
+      <path d="M-4 -11 C -14 -16, -16 -27, -8 -34 C -2 -28, -1 -18, -4 -11 Z"/>
+      <path d="M4 -11 C 14 -16, 16 -27, 8 -34 C 2 -28, 1 -18, 4 -11 Z"/>
+      <path d="M-4 -25 C -13 -30, -14 -41, -7 -46 C -1 -39, 0 -30, -4 -25 Z"/>
+      <path d="M4 -25 C 13 -30, 14 -41, 7 -46 C 1 -39, 0 -30, 4 -25 Z"/>
+      <path d="M-3 -39 C -11 -45, -12 -54, -6 -59 C -1 -51, 0 -44, -3 -39 Z"/>
+      <path d="M3 -39 C 11 -45, 12 -54, 6 -59 C 1 -51, 0 -44, 3 -39 Z"/>
+      <path d="M0 -48 C -5 -59, 0 -71, 0 -75 C 0 -71, 5 -59, 0 -48 Z" fill="#fae092"/>
+    </g>
+
+    <!-- Company name in badge -->
+    <text x="155" y="214" font-family="'IBM Plex Sans Arabic', sans-serif" font-weight="700" font-size="18" fill="#1c1409" text-anchor="middle">شركة الفلاحين الحديثة</text>
+    <line x1="80" y1="225" x2="230" y2="225" stroke="#b27812" stroke-width="1.5"/>
+    <text x="155" y="242" font-family="'IBM Plex Sans Arabic', sans-serif" font-weight="600" font-size="13.5" fill="#8e5406" text-anchor="middle">لصناعة الأعلاف ذ.م.م</text>
+  </g>
+</svg>
