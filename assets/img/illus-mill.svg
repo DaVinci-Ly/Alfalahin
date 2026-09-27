@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Feed Mill Silo and Factory Architecture -->
+  <path d="M12 24c0-8 6-14 14-14s14 6 14 14v30H12V24z" fill="#fef8eb" stroke="#d49a24"/>
+  <path d="M26 10v44M12 36h28M12 46h28" stroke="#0e1726" stroke-opacity="0.25"/>
+  <path d="M40 28h16v26H40" stroke="#0e1726"/>
+  <path d="M40 28l8-10 8 10" stroke="#d49a24"/>
+  <rect x="44" y="34" width="8" height="8" rx="1" stroke="#d49a24"/>
+  <path d="M6 54h52" stroke="#0e1726"/>
+</svg>

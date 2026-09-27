@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Delivery Truck / Logistics -->
+  <path d="M8 22h32v24H8z" fill="#fef8eb" stroke="#d49a24"/>
+  <path d="M40 30h10l6 8v8H40V30z" fill="#ffffff" stroke="#0e1726"/>
+  <circle cx="20" cy="48" r="4" fill="#0e1726"/>
+  <circle cx="48" cy="48" r="4" fill="#0e1726"/>
+  <path d="M4 48h12M24 48h20M52 48h6" stroke="#0e1726"/>
+  <path d="M16 28h16M16 34h12" stroke="#d49a24"/>
+</svg>

@@ -1,0 +1,7 @@
+# شركة الفلاحين الحديثة لصناعة الأعلاف ذ.م.م
+# الموقع مفتوح بالكامل لمحركات البحث
+
+User-agent: *
+Allow: /
+
+Sitemap: https://alfalahin.ly/sitemap.xml

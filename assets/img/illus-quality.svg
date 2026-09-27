@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Quality Shield & Checkmark -->
+  <path d="M32 8l18 8v16c0 14-18 24-18 24S14 46 14 32V16l18-8z" fill="#fef8eb" stroke="#d49a24"/>
+  <path d="M24 32l6 6 12-14" stroke="#236338" stroke-width="3"/>
+</svg>
