@@ -47,33 +47,70 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. معالجة نموذج طلب عروض الأسعار والتواصل عبر واتساب
+  // 4. معالجة نموذج طلب عروض الأسعار والتواصل عبر نظام FormSubmit
   const quoteForm = document.getElementById('quoteForm');
   if (quoteForm) {
-    quoteForm.addEventListener('submit', (e) => {
+    quoteForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      
-      const name = document.getElementById('qName')?.value.trim() || '';
-      const phone = document.getElementById('qPhone')?.value.trim() || '';
-      const feedType = document.getElementById('qFeedType')?.value || '';
-      const quantity = document.getElementById('qQuantity')?.value.trim() || '';
-      const notes = document.getElementById('qNotes')?.value.trim() || '';
+      const submitBtn = quoteForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>جاري إرسال الطلب...</span>';
+      }
 
-      const lines = [
-        'السلام عليكم ورحمة الله وبركاته،',
-        'أود الاستفسار وطلب عرض سعر من شركة الفلاحين الحديثة لصناعة الأعلاف:',
-        `• الاسم / المزرعة: ${name}`,
-        phone ? `• رقم الهاتف: ${phone}` : '',
-        `• نوع العلف: ${feedType}`,
-        quantity ? `• الكمية التقريبية: ${quantity}` : '',
-        notes ? `• تفاصيل إضافية: ${notes}` : '',
-      ].filter(Boolean);
+      let alertBox = document.getElementById('formAlert');
+      if (!alertBox) {
+        alertBox = document.createElement('div');
+        alertBox.id = 'formAlert';
+        quoteForm.prepend(alertBox);
+      }
+      alertBox.className = 'form-alert form-alert--success';
 
-      const msg = encodeURIComponent(lines.join('\n'));
-      const waUrl = `https://wa.me/218927144064?text=${msg}`;
-      window.open(waUrl, '_blank', 'noopener,noreferrer');
+      try {
+        const formData = new FormData(quoteForm);
+        const response = await fetch('https://formsubmit.co/ajax/info@alfalahin.ly', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: formData
+        });
+
+        if (response.ok) {
+          quoteForm.reset();
+          alertBox.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:1.5rem;height:1.5rem;flex-shrink:0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div>
+              <strong>تم إرسال طلبك بنجاح!</strong><br>
+              شكراً لتواصلك مع شركة الفلاحين الحديثة. سيتواصل معك قسم المبيعات في أقرب وقت.
+            </div>
+          `;
+          alertBox.style.display = 'flex';
+          alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          quoteForm.submit();
+        }
+      } catch (err) {
+        quoteForm.submit();
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        }
+      }
     });
   }
+
+  // 5. زر تبديل اللغة (English Toggle)
+  const langToggle = document.getElementById('langToggle');
+  const langToggleDrawer = document.getElementById('langToggleDrawer');
+  const showLangNotice = (e) => {
+    e.preventDefault();
+    alert('النسخة الإنجليزية قيد المراجعة والترجمة المعتمدة وستتوفر قريباً.\nEnglish version is being finalized and will be available soon.');
+  };
+  if (langToggle) langToggle.addEventListener('click', showLangNotice);
+  if (langToggleDrawer) langToggleDrawer.addEventListener('click', showLangNotice);
 
   // 5. التحكم في درج القائمة الجانبية للهاتف (Mobile App Drawer)
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');

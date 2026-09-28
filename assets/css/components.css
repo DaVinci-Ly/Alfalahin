@@ -1001,17 +1001,104 @@
   text-decoration: underline;
 }
 
+/* زر تحويل اللغة (جاهز لدعم الإنجليزية) */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--paper-sand);
+  border: 1px solid var(--paper-border);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all 0.2s var(--ease);
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  background: #ffffff;
+  color: var(--primary);
+  border-color: rgba(15, 23, 42, 0.2);
+}
+
+.lang-btn svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+/* رابط خريطة قوقل المباشر لموقع سيلين */
+.map-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--gold);
+  background: var(--gold-surface);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all 0.2s var(--ease);
+}
+
+.map-badge-link:hover {
+  background: var(--gold);
+  color: #ffffff;
+  border-color: var(--gold);
+}
+
+.hero__card-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+
+.hero__card-map-link:hover {
+  color: var(--gold-hover);
+  text-decoration: underline;
+}
+
+.form-alert {
+  display: none;
+  padding: var(--sp-4);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--sp-4);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.form-alert--success {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid rgba(22, 101, 52, 0.2);
+}
+
 /* ------------------------------------------------ درج القائمة الجانبية للهاتف (App Drawer) */
 .mobile-drawer {
   position: fixed;
   inset: 0;
-  z-index: 100;
-  visibility: hidden;
-  transition: visibility 0.25s var(--ease);
+  z-index: 200;
+  display: none;
+  pointer-events: none;
 }
 
 .mobile-drawer.is-open {
-  visibility: visible;
+  display: block;
+  pointer-events: auto;
 }
 
 .mobile-drawer__backdrop {
