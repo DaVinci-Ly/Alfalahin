@@ -23,14 +23,6 @@
   gap: var(--sp-6);
 }
 
-/* يبقى ترتيب الشريط العلوي ثابتاً (الشعار يمينًا) في العربية والإنجليزية معاً، دون انعكاس */
-html[dir="ltr"] .header__inner {
-  flex-direction: row-reverse;
-}
-
-html[dir="ltr"] .header__actions {
-  flex-direction: row-reverse;
-}
 
 .brand {
   display: inline-flex;
@@ -97,8 +89,8 @@ html[dir="ltr"] .header__actions {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 2.5rem;
-  height: 2.5rem;
+  min-width: 2.75rem;
+  height: 2.75rem;
   padding-inline: 0.6rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -126,8 +118,8 @@ html[dir="ltr"] .header__actions {
 
 .icon-btn {
   display: none;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
@@ -853,6 +845,13 @@ a.contact-item__value:hover {
 }
 
 /* ----------------------------------------------------------- الاستجابة */
+/* عند تضيّق العرض، رقم الهاتف النصي أول ما يُخفى (يبقى بديله زر الاتصال بالأيقونة) لإفساح المجال للقائمة وزر الطلب، فلا يلتف نص الإنجليزية الأطول */
+@media (max-width: 1180px) {
+  .header__phone {
+    display: none;
+  }
+}
+
 @media (max-width: 1000px) {
   .hero__inner,
   .two-col {
@@ -933,6 +932,28 @@ a.contact-item__value:hover {
   .steps {
     grid-template-columns: 1fr;
     gap: var(--sp-5);
+  }
+}
+
+/* الهواتف الصغيرة جداً (أقل من 481px): نكتفي بالشعار بلا نص لإفساح المجال لأزرار الاتصال والواتساب وتبديل اللغة دون أي تداخل أو خروج عن حدود الشاشة */
+@media (max-width: 480px) {
+  .brand__text {
+    display: none;
+  }
+  .brand__mark {
+    width: 2.75rem;
+  }
+  .header__inner {
+    gap: var(--sp-3);
+  }
+  .header__actions {
+    gap: var(--sp-2);
+  }
+  .icon-btn,
+  .lang-link {
+    width: 2.5rem;
+    min-width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
