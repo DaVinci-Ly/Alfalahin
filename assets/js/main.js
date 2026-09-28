@@ -74,4 +74,36 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open(waUrl, '_blank', 'noopener,noreferrer');
     });
   }
+
+  // 5. التحكم في درج القائمة الجانبية للهاتف (Mobile App Drawer)
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+  const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
+
+  const openDrawer = () => {
+    if (mobileDrawer) {
+      mobileDrawer.classList.add('is-open');
+      mobileDrawer.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeDrawer = () => {
+    if (mobileDrawer) {
+      mobileDrawer.classList.remove('is-open');
+      mobileDrawer.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openDrawer);
+  if (mobileDrawerClose) mobileDrawerClose.addEventListener('click', closeDrawer);
+  if (mobileDrawerBackdrop) mobileDrawerBackdrop.addEventListener('click', closeDrawer);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileDrawer && mobileDrawer.classList.contains('is-open')) {
+      closeDrawer();
+    }
+  });
 });
