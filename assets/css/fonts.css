@@ -2,7 +2,7 @@
    شركة الفلاحين الحديثة — الخطوط المستضافة محلياً
    ========================================================================== */
 
-/* GE SS Two — الخط الرئيسي لهوية الموقع */
+/* GE SS Two — للعناوين واسم الشركة (نفس خط ورق المراسلات) */
 @font-face {
   font-family: 'GE SS Two';
   font-style: normal;
@@ -19,7 +19,7 @@
   src: url('../fonts/gess-two-bold.woff2') format('woff2');
 }
 
-/* IBM Plex Sans Arabic — خط احتياطي فقط عند غياب GE SS */
+/* IBM Plex Sans Arabic — لنصوص الفقرات */
 /* arabic 400 */
 @font-face {
   font-family: 'IBM Plex Sans Arabic';

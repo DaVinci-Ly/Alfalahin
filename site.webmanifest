@@ -1,14 +1,14 @@
 {
   "name": "شركة الفلاحين الحديثة لصناعة الأعلاف ذ.م.م",
   "short_name": "الفلاحين الحديثة",
-  "description": "صناعة وتوريد جميع أنواع الأعلاف الحيوانية للدواجن والمواشي والأغنام والإبل بأعلى معايير الجودة.",
+  "description": "مصنع أعلاف في سيلين - الخمس منذ 2006. أعلاف للدواجن والأبقار والأغنام والإبل.",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#faf8f5",
-  "theme_color": "#0d1624",
+  "background_color": "#faf8f3",
+  "theme_color": "#faf8f3",
   "icons": [
     {
       "src": "/assets/img/icon-192.png",

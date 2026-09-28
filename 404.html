@@ -2,73 +2,36 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>الصفحة غير موجودة (404) | شركة الفلاحين الحديثة لصناعة الأعلاف</title>
-  <meta name="theme-color" content="#0e1726">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <style>
-    .not-found {
-      min-height: 70vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: var(--sp-12) var(--sp-6);
-    }
-    .not-found__code {
-      font-size: clamp(5rem, 12vw, 8rem);
-      font-weight: 800;
-      color: var(--gold);
-      line-height: 1;
-      margin-bottom: var(--sp-4);
-      opacity: 0.9;
-    }
-    .not-found h1 {
-      font-size: var(--step-3);
-      margin-bottom: var(--sp-3);
-    }
-    .not-found p {
-      font-size: var(--step-0);
-      max-width: 32rem;
-      margin-bottom: var(--sp-8);
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>الصفحة غير موجودة | شركة الفلاحين الحديثة لصناعة الأعلاف</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#faf8f3">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a class="brand" href="index.html">
-        <img class="brand__mark" src="assets/img/logo.png" alt="شركة الفلاحين الحديثة" width="46" height="46">
+      <a class="brand" href="/">
+        <img class="brand__mark" src="/assets/img/logo-128.png" alt="" width="128" height="123">
         <span class="brand__text">
           <span class="brand__name">شركة الفلاحين الحديثة</span>
-          <span class="brand__sub">لصناعة الأعلاف ذ.م.م</span>
+          <span class="brand__sub">لصناعة الأعلاف</span>
         </span>
       </a>
-      <a class="btn btn--gold" href="index.html">العودة للرئيسية</a>
     </div>
   </header>
 
-  <main>
-    <div class="container not-found">
-      <div class="not-found__code">404</div>
-      <h1>الصفحة المطلوبة غير موجودة</h1>
-      <p>قد يكون الرابط الذي اتبعته غير صحيح أو تم نقله. يمكنك العودة إلى الصفحة الرئيسية أو استعراض منتجات الأعلاف المتاحة.</p>
-      <div class="btn-group">
-        <a class="btn btn--gold" href="index.html">الصفحة الرئيسية</a>
-        <a class="btn btn--outline" href="products.html">منتجات الأعلاف</a>
+  <main class="section">
+    <div class="container container--narrow" style="text-align: center; padding-block: 3rem;">
+      <h1>الصفحة غير موجودة</h1>
+      <p style="margin: var(--sp-3) auto var(--sp-6); max-width: 30rem;">ربما تغيّر الرابط أو كُتب بشكل خاطئ.</p>
+      <div class="btn-group" style="justify-content: center;">
+        <a class="btn btn--primary" href="/">الصفحة الرئيسية</a>
+        <a class="btn btn--outline" href="/products.html">المنتجات</a>
       </div>
     </div>
   </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__bottom" style="border-top: none; justify-content: center;">
-        <p>© 2006–2026 شركة الفلاحين الحديثة لصناعة الأعلاف ذ.م.م</p>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
