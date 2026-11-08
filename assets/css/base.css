@@ -31,9 +31,8 @@
   --wa: #1a7f45;
   --wa-hover: #146838;
 
-  /* الخطوط: GE SS Two للعناوين (نفس خط ورق المراسلات) و IBM Plex للنص */
-  --font-head: "GE SS Two", "IBM Plex Sans Arabic", system-ui, sans-serif;
-  --font-body: "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-head: "Cairo", system-ui, sans-serif;
+  --font-body: "Cairo", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --sp-1: 0.25rem;
   --sp-2: 0.5rem;
@@ -122,11 +121,6 @@ h3 { font-size: var(--step-1); }
 
 p {
   color: var(--ink-soft);
-}
-
-/* النسخة الإنجليزية: IBM Plex بدل GE SS Two لأن حروفه اللاتينية أوضح */
-html[lang="en"] {
-  --font-head: var(--font-body);
 }
 
 html[lang="en"] h1,

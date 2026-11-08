@@ -14,6 +14,18 @@ const MESSAGES = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.lang-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      const language = link.getAttribute('hreflang');
+      if (language !== 'ar' && language !== 'en') return;
+      try {
+        localStorage.setItem('alfalahin-language', language);
+      } catch (error) {
+        console.warn('Could not save the language preference', error);
+      }
+    });
+  });
+
   // نموذج طلب السعر: يجهّز رسالة مرتبة ويفتحها في واتساب
   const quoteForm = document.getElementById('quoteForm');
   if (!quoteForm) return;

@@ -62,8 +62,8 @@
     </g>
 
     <!-- Company name in badge -->
-    <text x="155" y="214" font-family="'IBM Plex Sans Arabic', sans-serif" font-weight="700" font-size="18" fill="#1c1409" text-anchor="middle">شركة الفلاحين الحديثة</text>
+    <text x="155" y="214" font-family="Cairo, sans-serif" font-weight="700" font-size="18" fill="#1c1409" text-anchor="middle">شركة الفلاحين الحديثة</text>
     <line x1="80" y1="225" x2="230" y2="225" stroke="#b27812" stroke-width="1.5"/>
-    <text x="155" y="242" font-family="'IBM Plex Sans Arabic', sans-serif" font-weight="600" font-size="13.5" fill="#8e5406" text-anchor="middle">لصناعة الأعلاف ذ.م.م</text>
+    <text x="155" y="242" font-family="Cairo, sans-serif" font-weight="600" font-size="13.5" fill="#8e5406" text-anchor="middle">لصناعة الأعلاف ذ.م.م</text>
   </g>
 </svg>
